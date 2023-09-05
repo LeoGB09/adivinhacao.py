@@ -32,7 +32,7 @@ for tentativas in range(1, rodadas + 1):
     maior = numero_chute > numero_secreto
     menor = numero_chute < numero_secreto
     print("------------------------")
-    print("TENTATIVA {} DE {}".format(tentativas, rodadas))
+    print(f"TENTATIVA {tentativas} DE {rodadas}")
     print("------------------------")
     print("Você digitou:", numero_chute)
     
@@ -43,11 +43,11 @@ for tentativas in range(1, rodadas + 1):
         if(maior):
             print("Você errou, o numero secreto é menor")
             if(tentativas == rodadas):
-                print("O numero secreto era {}".format(numero_secreto))
+                print(f"O numero secreto era {numero_secreto}")
         elif(menor):
             print("Você errou, o numero secreto é maior")
             if(tentativas == rodadas):
-                print("O numero secreto era {}".format(numero_secreto))
+                print(f"O numero secreto era {numero_secreto}")
 
 print("---------------------")
 print("-----Fim de Jogo-----")
